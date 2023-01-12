@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <link rel="shortcut icon" href="Img/logo.jpg" type="image/x-icon">
+    <title>青云依旧</title>
+    <link rel="stylesheet" href="Config/index/comDataVue.css">
+    <link rel="stylesheet" href="Config/index/new_header.css">
+</head>
+<body>
+  <div id="headerApp" class="">
+    <div ondragstart="return false"> 
+      <div class="comhead-top informcomhead">
+        <div class="head-plugin-comhead">
+          <div class="comhead-top-inner">
+            <div class="comhead-top-l"><a href="index.html"><i class="" style=""></i>&nbsp;&nbsp;<span>青云依旧</span></a> </div> 
+            <div class="comhead-top-r">
+                <a href="index.html" target="_blank">青云优选<img src="Config/index/slogo" class="douyin-icon"></a>
+                <a href="search.html" target="_blank">青云搜索</a>
+                <a href="Q.html" target="_blank">青云阁</a>
+                <a href="Qsystem.html" target="_blank">青云藏宝阁</a>
+
+                <div class="top-r-item">
+                    <a style="cursor: pointer;">培挣</a>
+                    <ul>
+                        <li>
+                            <a href="javascript:" id="contact_service">公众号</a>
+                            <div class="n-contact-kefu"><img src="Img/index/wxgzh.jpg"> <div class="contact-tips"><span>扫码关注公众号</span></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="top-r-item">
+                    <a style="cursor: pointer;">关注我</a>
+                    <ul>
+                        <li>
+                            <a href="javascript:" id="contact_service">抖音</a>
+                            <div class="n-contact-kefu"><img src="Img/index/douyin.jpg"> <div class="contact-tips"><span>抖音扫码关注</span></div></div>
+                        </li>
+                        <li><a href="https://b23.tv/dNl8qJd" target="_blank">B站</a></li>
+                        <li><a href="https://blog.csdn.net/Editor_" target="_blank">CSDN</a></li>
+                        <li>
+                            <a href="javascript:" id="contact_service">公众号</a>
+                            <div class="n-contact-kefu"><img src="Img/index/wxgzh.jpg"> <div class="contact-tips"><span>微信扫码关注</span></div></div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--重要标记-->
+<style>
+ .inProduc-l-de{display:none;color:#999;font-size:12px;position:absolute;left:0;background:#fff;z-index:11;width:100%;border-radius:0 0 3px 3px;bottom:1px!important;transform:translateY(100%);height:auto}
+.inProduc-l-list>li{transition:border-radius 0s,transform .2s ease-in-out,box-shadow .2s ease-in-out,z-index .2s ease-in-out}
+.inProduc-l-list>li:hover,.inProduc-t-list>li:hover{border-radius:10px 10px 0 0}
+.g-shoplist-footer{position:relative;line-height:22px;padding-bottom:10px;padding:12px 12px;border-top:1px solid #f5f5f5}
+.g-sellername{color:#999}
+.g-btn-grounp{display:inline-flex;height:24px;background:#f7f7f7;border-radius:2px 2px 0 0;overflow:hidden;position:absolute;bottom:-10px;right:0;cursor:pointer}
+.g-btn-grounp .line{width:1px;height:12px;margin:6px 0;background:#ededed}
+.g-btn-grounp::after{content:'';pointer-events:none;width:100%;height:100%;box-sizing:border-box;border:1px solid #ededed;cursor:pointer;position:absolute;top:0;left:0}
+.g-btn-grounp .btn-item{display:flex;align-items:center;justify-content:center;width:34px;height:100%;font-size:12px;font-weight:400;color:#4e76ff;line-height:1;position:relative}
+.g-btn-grounp .btn-item:hover{background:#4e76ff;color:#fff}
+.g-report{position:absolute;bottom:-1px;right:1px;cursor:pointer}
+.g-report:hover{color:#5490ff}
+.c-newconversion{margin-left:2px;width:32px;height:18px;background:#ffeae8;border-radius:9px;font-size:12px;font-weight:500;line-height:18px;text-align:center}
+.c-feed-active .g-sellername{display:inline-flex}
+.c-enterprise-wrap{font-size:14px;color:#5490ff;margin-left:2px;position:relative;display:inline-block}
+.c-enterprise-wrap:hover{color:#417dec}
+.g-shoplist-footer .bottom-hot{font-size:12px;font-weight:500}
+.g-shoplist-footer .bottom-hot i{font-size:12px}
+.g-shoplist-footer .bottom-hot em{margin-right:5px}
+.g-shoplist-footer .bottom-hot span{cursor:pointer}
+.g-shoplist-footer .bottom-report{position:absolute;right:8px;bottom:8px;width:65px;height:24px;background:#f7f7f7;border-radius:12px;border:1px solid #ededed;color:#999;cursor:pointer;overflow:hidden}
+.g-shoplist-footer .bottom-card-repor:hover,.g-shoplist-footer .bottom-report.bottom-repor-index i:hover{background-color:#fff}
+.g-shoplist-footer .bottom-report .hdk-jubao_report{font-size:14px;margin-right:2px}
+.g-shoplist-footer .redcolor{color:#ff4c42}
+.g-shoplist-footer .source{max-width:140px}
+.g-shoplist-footer .source.active{max-width:125px}
+.g-shoplist-footer .bottom-report.bottom-repor-index i{flex:1;text-align:center;margin:0;font-size:14px;position:relative}
+.g-shoplist-footer .bottom-repor-index i:nth-child(2)::after{content:'';position:absolute;top:50%;left:0;width:1px;height:12px;border-radius:2px;background-color:#eae0e0;transform:translateY(-50%)}
+.g-shoplist-footer .bottom-repor-index:hover i:nth-child(2)::after{content:initial}
+.sholist-card-tlj p{margin-top:4px}
+</style>
+<!--标记结束-->
+
+
+
+<!--重要调用-->
+<link rel="stylesheet" href="Config/index/index.css">
+<!--重要调用-->
+
+<!--主体部分-->
+<div id="main-app" ondragstart="return false" class="container">
+    <section class="n-main">
+        <div class="n-main-wrap">
+
+            <div class="mt20"><div class="index-adsarea"><div class="adsarea-item adsarea-item-active"><img src="Config/index/top.png" > </div></div></div>
+
+
+            <!--品牌汇开始-->
+            <div class="mt20">
+                <div class="brand-area">
+                    <div class="brand-exchange">
+                        <div class="topgood-single">
+                            <p class="good-single-title">青云依旧</p>
+                            <div class="line"></div>
+                            <p class="good-single-text">Qing Yun Yi Jiu</p>
+                            <div class="good-single-nav">
+                                <div class="brandnav-item active">青云优选</div>
+                                <a href="search.html" target="_blank" class="brandnav-item">
+                                    青云搜索<i class=" iconfont hdk-xiangyou"></i>
+                                </a>
+                                <a href="Q.html" target="_blank" class="brandnav-item">
+                                    青云阁<i class=" iconfont hdk-xiangyou"></i>
+                                </a>
+                                <a href="Qsystem.html" target="_blank" class="brandnav-item">
+                                    青云藏宝阁<i class=" iconfont hdk-xiangyou"></i>
+                                </a>
+                                <a href="#" target="_blank" class="brandnav-item">
+                                    培挣<i class=" iconfont hdk-xiangyou"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <!--标记开始-->
+                        <div class="brand-wrap">
+                            <div class="brand-l">
+                                <div class="round-box-small"><div class="round"></div></div>
+                                <div class="brand-comtop"><h6>福利中心</h6> <p>快来领取吧！</p></div>
+
+                                <div>
+                                    <!--标记开始-->
+                                    <div class="brand-l-box" style="background-image: url(Img/logo.jpg);">
+                                        <div class="brand-dust"></div>
+                                        <div class="brand-l-box-a">
+                                            <div class="brand-l-top">
+                                                <p>粉丝福利群</p> <em>快开加入微信群聊</em>
+                                                <div class="brand-l-label"><span>交流群</span><span>购物群</span><span>电影群</span></div>
+                                            </div>
+                                            <div class="brand-l-img">
+                                                <div class="brand-item">
+                                                    <img src="Img/index/1/jlq.png">
+                                                </div><div class="brand-item">
+                                                    <img src="Img/index/1/gwq.png">
+                                                </div><div class="brand-item">
+                                                    <img src="Img/index/1/dyq.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--标记结束-->
+                                    <!--标记开始-->
+                                    <div class="brand-l-box" style="background-image: url(Img/logo.jpg);">
+                                        <div class="brand-dust"></div>
+                                        <div class="brand-l-box-a">
+                                            <div class="brand-l-top">
+                                                <p>关注我</p> <em>扫一扫二维码</em>
+                                                <div class="brand-l-label"><span>公众号</span><span>抖音</span><span>Bilibili</span></div>
+                                            </div>
+                                            <div class="brand-l-img">
+                                                <div class="brand-item">
+                                                    <img src="Img/index/wxgzh.jpg">
+                                                </div>
+                                                <div class="brand-item">
+                                                    <img src="Img/index/douyin.jpg">
+                                                </div>
+                                                <div class="brand-item">
+                                                    <img src="Img/index/bilibili.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--标记结束-->
+
+                                </div>
+                            </div>
+
+                            <!--标记结束-->
+                            <!--标记开始-->
+                            <div class="brand-c">
+                                <div class="brand-comtop"><h6>正规手机卡</h6> <p class="copyBtn">办理成功次月在网可以联系站长领66-99元红包</p></div>
+                                <ul class="brand-c-list clearfix">
+
+                                    <li>
+                                        <a href="http://gantanhao.vip/webapp/merchant/templet1.html?share_id=438948&id=2943769" target="_blank">
+                                            <div class="brand-c-img">
+                                                <img src="https://static.91haoka.cn/1672990156gre.jpg">
+                                            </div>
+                                            <ul class="brand-c-data"><li><em>￥29</em> <p>月租</p></li> <li><em>143G</em> <p>流量</p></li> <li><em>200分钟</em> <p>通话</p></li></ul>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="http://gantanhao.vip/webapp/merchant/templet1.html?share_id=438948&id=2943885" target="_blank">
+                                            <div class="brand-c-img">
+                                                <img src="https://static.91haoka.cn/1672985259aZj.jpg">
+                                            </div>
+                                            <ul class="brand-c-data"><li><em>￥29</em> <p>月租</p></li> <li><em>143G</em> <p>流量</p></li> <li><em>200分钟</em> <p>通话</p></li></ul>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="http://gantanhao.vip/webapp/merchant/templet1.html?share_id=438948&id=2943574" target="_blank">
+                                            <div class="brand-c-img">
+                                                <img src="https://static.91haoka.cn/1672990274ixK.jpg">
+                                            </div>
+                                            <ul class="brand-c-data"><li><em>￥39</em> <p>月租</p></li> <li><em>203G</em> <p>流量</p></li> <li><em>200分钟</em> <p>通话</p></li></ul>
+                                        </a>
+                                    </li>
+
+
+
+                                    <li>
+                                        <a href="https://render.alipay.com/p/s/i/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D2060090000286612%26url%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fyuyan%252F180020380000000287%252Findex.html%253FcaprMode%253Dsync%26pageType%3Dreceive%26cardIdsString%3D0f8fd19b5246c7214dfa0af8bafb68b0%26senderUserId%3D2088722601084907%26wufuShareCard%3DN%26fxzjshareChinfo%3Dch_share__chsub_CopyLink%26chInfo%3Dch_share__chsub_CopyLink%26apshareid%3Dc9032865-f99f-450c-b4d7-7b37696b585f%26shareBizType%3DztokenV0_ViZFBJOU" target="_blank">
+                                            <div class="brand-c-img">
+                                                <img src="Img/index/1/fqf.jpg">
+                                            </div>
+                                            <ul class="brand-c-data"><li><em>1</em> <p>剩余</p></li> <li><em>9</em> <p>已领</p></li> <li><em>10</em> <p>总量</p></li> </ul>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="https://render.alipay.com/p/s/i/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D2060090000286612%26url%3Dhttps%253A%252F%252Frender.alipay.com%252Fp%252Fyuyan%252F180020380000000287%252Findex.html%253FcaprMode%253Dsync%26pageType%3Dreceive%26cardIdsString%3D0d4201d678b7c8c35e91a51d0e7868e8%26senderUserId%3D2088722601084907%26wufuShareCard%3DN%26fxzjshareChinfo%3Dch_share__chsub_CopyLink%26chInfo%3Dch_share__chsub_CopyLink%26apshareid%3D7ee2532c-eea0-4b02-8ffc-ac2c3db2640c%26shareBizType%3DztokenV0_ZwEbtWwR" target="_blank">
+                                            <div class="brand-c-img">
+                                                <img src="Img/index/1/hxf.jpg">
+                                            </div>
+                                            <ul class="brand-c-data"><li><em>1</em> <p>剩余</p></li> <li><em>9</em> <p>已领</p></li> <li><em>10</em> <p>总量</p></li></ul>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <div class="brand-c-img">
+                                                <img src="Img/logo.jpg">
+                                            </div>
+                                            <ul class="brand-c-data"><li><em>1009</em> <p>点赞</p></li> <li><em>15630</em> <p>关注</p></li> <li><em>840</em> <p>转发</p></li></ul>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <div class="brand-r">
+                                <div class="round-box-big"><div class="round"></div></div> <div class="brand-comtop"><h6>红包专区</h6> <p class="copyBtn">每天都可以领</p></div>
+                                                                                           <ul class="brand-r-list">
+                                                                                               <li class="comflexCenter"><a href="https://mp.weixin.qq.com/s?__biz=Mzg3MTgzNjUwNg==&mid=2247483835&idx=5&sn=f8d12574d9e7c0afce21b134011a1d9e&chksm=cef93f8ef98eb698c5034066f0a3ba89287203f62601311d9b97a0ca0eda4526ce613ecd0156&token=2037573749&lang=zh_CN#rd" target="_blank"><img src="https://gw.alipayobjects.com/mdn/member_frontWeb/afts/img/A*oRlnSYAsgYQAAAAAAAAAAABkARQnAQ" data-echo="https://gift-img-ys011.hongyibo.com.cn/static/pope_manage/zzg_kfhome_logo_0619.png"></a></li>
+                                                                                               <li class="comflexCenter"><a href="https://mp.weixin.qq.com/mp/homepage?__biz=Mzg3MTgzNjUwNg==&hid=7&sn=d37875edf5509f7cd8434bd2f9653144" target="_blank"><img src="https://gw.alicdn.com/imgextra/i3/O1CN01uRz3de23mzWofmPYX_!!6000000007299-2-tps-143-59.png" data-echo="https://gw.alicdn.com/imgextra/i3/O1CN01uRz3de23mzWofmPYX_!!6000000007299-2-tps-143-59.png"></a></li>
+                                                                                               <li class="comflexCenter"><a href="https://mp.weixin.qq.com/mp/homepage?__biz=Mzg3MTgzNjUwNg==&hid=8&sn=d3e68b763fff61e357fe8466993107b0" target="_blank"><img src="https://img10.360buyimg.com/img/jfs/t1/50166/9/22920/11310/63a1993cE3800216e/105f3d456f0905bb.jpg" data-echo="https://img10.360buyimg.com/img/jfs/t1/50166/9/22920/11310/63a1993cE3800216e/105f3d456f0905bb.jpg"></a></li>
+                                                                                               <li class="comflexCenter"><a href="https://mp.weixin.qq.com/mp/homepage?__biz=Mzg3MTgzNjUwNg==&hid=9&sn=7f500909b30c1a7cc1a2f8a2d50ebd90" target="_blank"><img src="https://cdn.pinduoduo.com/upload/home/img/common/pdd_logo_v2.png" data-echo="https://cdn.pinduoduo.com/upload/home/img/common/pdd_logo_v2.png"></a></li>
+                                                                                               <li class="comflexCenter"><a href="https://mp.weixin.qq.com/mp/homepage?__biz=Mzg3MTgzNjUwNg==&hid=10&sn=b211905b2eea5fbb36d360db893df96a" target="_blank"><img src="https://p0.meituan.net/openhfiveimages/073cf4ab03d6bc6fa117b53157f3622e4898.png" data-echo="https://p0.meituan.net/openhfiveimages/073cf4ab03d6bc6fa117b53157f3622e4898.png"></a></li>
+                                                                                               <li class="comflexCenter"><a href="https://mp.weixin.qq.com/mp/homepage?__biz=Mzg3MTgzNjUwNg==&hid=11&sn=a44ade36fa7e1374b8c76a459424e454" target="_blank"><img src="https://img.sj33.cn/uploads/202010/7-201006093301204.jpg" data-echo="https://img.sj33.cn/uploads/202010/7-201006093301204.jpg"></a></li>
+                                                                                               <li class="comflexCenter"><a href="https://mp.weixin.qq.com/mp/homepage?__biz=Mzg3MTgzNjUwNg==&hid=12&sn=d683c594ed4ec6f26053d044b66ab299" target="_blank"><img src="Img/index/more.png" data-echo="https://img.sj33.cn/uploads/202010/7-2010060951421O.jpg"></a></li>
+                                                                                           </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--品牌汇结束-->
+            <!--爆款快抢开始-->
+            <div class="mt20">
+                <div class="fastbuy-area">
+                    <div class="fastbuy">
+                        <div class="fastbuy-left">
+                            <p class="start-time">百度网盘会员优惠</p>
+                            <div class="line"></div> <a href="https://mp.weixin.qq.com/mp/homepage?__biz=Mzg3MTgzNjUwNg==&hid=14&sn=fe8aecf9b916698ff566c63083235bb2" target="_blank" class="more">查看全部<i class="more-icon iconfont hdk-xiangyou"></i></a>
+                            <p class="end-text">下单成功可领2~50元随机红包</p>
+                            <p class="end-time">剩余<em>1</em>万<em style="margin-left: 8px;">2</em>千<em style="margin-left: 8px;">2</em>百元</p>
+                        </div>
+                        <div class="fastbuy-box">
+                            <ul class="inProduc-l-list js-inProducHover clearfix fastbuy-list">
+                                <!--免费VIP-->
+                                <li class="fastbuy-item">
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div><em>免费</em> <img src="Img/index/sp/bdwpvip.jpg" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="el-tooltip js-shopcard-btn  fq-copy c-shoplist-top-btn" aria-describedby="el-tooltip-2876" tabindex="0"><a href="https://pan.baidu.com/component/view/2104?from=fx" style="color:white" target="_blank">点击领取</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                百度网盘VIP免费领
+                                            </h5>
+                                        </div> <div class="item-progress"><p>已抢 1223 件</p> <div class="progress-xian"><i style="width: 80%;"></i></div></div>
+                                        <div class="goods-price"><span class="price-text">粉丝价</span> <span class="price-num">￥0</span></div>
+                                    </div>
+                                    <div class="inProduc-l-de">
+                                        <div class="inProduc-l-icon">
+                                            <div class="g-icon-box">
+                                                <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-236" tabindex="0"></em>
+                                            </div>
+                                        </div>
+                                        <div class="g-shoplist-footer">
+                                            <p>1、活动时间</p>
+                                            <p>即日起至2023年6月30日23:59</p>                                                
+                                            <p>2、活动规则</p>
+                                            <p>新用户: 活动期间下载安装百度网盘APP，注册登陆后即可获得百度网盘会员7天</p>
+                                            <p>老用户: 已在使用百度网盘的用户，点击免费领前往百度网盘APP，即可获得百度网盘会员1天</p>
+                                            <p>3、活动说明</p>
+                                            <p>（1）每个账号每个自然月仅能参与1次活动</p> 
+                                            <p>（2）活动奖品数量有限，领完即止，先到先得</p>
+                                            <p>（3）用户现有会员时长+活动赠送时长上限3年，超过则无法成功领取</p>
+                                            <p>（4）确保您的百度网盘App为最新版本，以免无法参与活动</p>
+                                            <p>（5）咨询问题及反馈建议，请至百度网盘APP->我的->用户反馈处寻求帮助</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--月卡-->
+                                <li class="fastbuy-item">
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+
+                                            <img src="https://ndstatic.cdn.bcebos.com/communitySale/yueka.png" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="el-tooltip js-shopcard-btn  fq-copy c-shoplist-top-btn" aria-describedby="el-tooltip-2876" tabindex="0"><a href="https://b23.tv/dNl8qJd" style="color:white" target="_blank">点击购买</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                百度网盘SVIP月卡
+                                            </h5>
+                                        </div> <div class="item-progress"><p>已抢 737 件</p> <div class="progress-xian"><i style="width: 0%;"></i></div></div>
+                                        <div class="goods-price">
+                                            <span class="price-text">粉丝价</span>
+                                            <span class="price-num">￥18</span>
+                                        </div>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="inProduc-l-icon"><div class="g-icon-box"><em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-7854" tabindex="0"></em></div></div>
+                                        <div class="g-shoplist-footer">
+                                            <p>备注：点击“点击购买”跳转链接后，请使用微信或支付宝扫码购买，凡购买成功的，可在公众号发购买截图，审核通过后可获得2~50元的随机红包</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--季卡-->
+                                <li class="fastbuy-item">
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <img src="https://ndstatic.cdn.bcebos.com/communitySale/jika.png" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="el-tooltip js-shopcard-btn  fq-copy c-shoplist-top-btn" aria-describedby="el-tooltip-2876" tabindex="0">
+                                                        <a href="https://b23.tv/dNl8qJd" style="color:white" target="_blank">点击购买</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                百度网盘SVIP季卡
+                                            </h5>
+                                        </div> <div class="item-progress"><p>已抢 298 件</p> <div class="progress-xian"><i style="width: 0%;"></i></div></div> <div class="goods-price"><span class="price-text">粉丝价</span> <span class="price-num">￥48</span></div>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="inProduc-l-icon"><div class="g-icon-box"><em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-4741" tabindex="0"></em> </div></div>
+                                        <div class="g-shoplist-footer">
+                                            <p>备注：点击“点击购买”跳转链接后，请使用微信或支付宝扫码购买，凡购买成功的，可在公众号发购买截图，审核通过后可获得2~50元的随机红包</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--联合会员-->
+                                <li class="fastbuy-item">
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <img src="https://staticsns.cdn.bcebos.com/amis/2022-7/1658741403206/lianhe.png" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="el-tooltip js-shopcard-btn  fq-copy c-shoplist-top-btn" aria-describedby="el-tooltip-2876" tabindex="0">
+                                                        <a href="https://b23.tv/dNl8qJd" style="color:white" target="_blank">点击购买</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">百度网盘联合会员</h5>
+                                        </div>
+                                        <div class="item-progress">
+                                            <p>已抢 278 件</p>
+                                            <div class="progress-xian"><i style="width: 0%;"></i></div>
+                                        </div>
+                                        <div class="goods-price">
+                                            <span class="price-text">券后价</span>
+                                            <span class="price-num">￥40</span>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-de">
+                                        <div class="inProduc-l-icon">
+                                            <div class="g-icon-box"><em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-8452" tabindex="0"></em></div>
+                                        </div>
+                                        <div class="g-shoplist-footer">
+                                            <p>备注：点击“点击购买”跳转链接后，请使用微信或支付宝扫码购买，凡购买成功的，可在公众号发购买截图，审核通过后可获得2~50元的随机红包</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--吴磊联名卡-->
+                                <li class="fastbuy-item">
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <img src="https://staticsns.cdn.bcebos.com/amis/2022-7/1658741371481/wulei.png" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="el-tooltip js-shopcard-btn  fq-copy c-shoplist-top-btn" aria-describedby="el-tooltip-2876" tabindex="0">
+                                                        <a href="https://b23.tv/dNl8qJd" style="color:white" target="_blank">点击购买</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                百度网盘吴磊联名卡
+                                            </h5>
+                                        </div> <div class="item-progress"><p>已抢 298 件</p> <div class="progress-xian"><i style="width: 11%;"></i></div></div> <div class="goods-price"><span class="price-text">粉丝价</span> <span class="price-num">￥298</span></div>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="inProduc-l-icon"><div class="g-icon-box"><em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-4741" tabindex="0"></em> </div></div>
+                                        <div class="g-shoplist-footer">
+                                            <p>备注：点击“点击购买”跳转链接后，请使用微信或支付宝扫码购买，凡购买成功的，可在公众号发购买截图，审核通过后可获得2~50元的随机红包</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--年卡-->
+                                <li class="fastbuy-item">
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <img src="https://ndstatic.cdn.bcebos.com/communitySale/nianka.png" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="el-tooltip js-shopcard-btn  fq-copy c-shoplist-top-btn" aria-describedby="el-tooltip-2876" tabindex="0">
+                                                        <a href="https://b23.tv/dNl8qJd" style="color:white" target="_blank">点击购买</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                百度网盘SVIP年卡
+                                            </h5>
+                                        </div> <div class="item-progress"><p>已抢 230 件</p> <div class="progress-xian"><i style="width: 60%;"></i></div></div> <div class="goods-price"><span class="price-text">粉丝价</span> <span class="price-num">￥188</span></div>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="inProduc-l-icon"><div class="g-icon-box"><em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-4741" tabindex="0"></em> </div></div>
+                                        <div class="g-shoplist-footer">
+                                            <p>备注：点击“点击购买”跳转链接后，请使用微信或支付宝扫码购买，凡购买成功的，可在公众号发购买截图，审核通过后可获得2~50元的随机红包</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!--结束-->
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--爆款快抢结束-->
+            <!--电影排行榜开始-->
+            <div class="mt20">
+                <div class="topitem-area">
+                    <div class="good-single-leaderboard">
+                        <div class="good-single-top">
+                            <p class="good-single-title">电影热搜排行榜</p>
+                            <div class="line"></div>
+                            <p class="good-single-text">Good movies Leaderboard</p>
+                        </div>
+                        <div class="good-single-box">
+                            <div class="round-box-big"><div class="round"></div></div>
+                            <div class="round-box-small"><div class="round"></div></div>
+                            <ul class="inProduc-l-list js-inProducHover clearfix good-single-list">
+                                <!--电影排行榜1-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">1</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：266489</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/b9f94c9d19b39493a1dd590ec0ae401b?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://www.aliyundrive.com/s/QtzsBU7vwdp" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                阿凡达2：水之道
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2022年12月16日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>8.0分</span> <em>豆瓣评分</em></li>
+                                            <li><span>冒险</span> <em>类型</em></li>
+                                            <li><span>美国</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                影片设定在《阿凡达》的剧情落幕十余年后，讲述了萨利一家（杰克、奈蒂莉和孩子们）的故事：危机未曾消散，一家人拼尽全力彼此守护、奋力求生，并历经艰险磨难。
+                                            </div>
+                                            <div class="g-comfooter">
+                                                杰克和奈蒂莉组建了家庭，他们的孩子也逐渐成长，为这个家庭带来了许多欢乐。然而危机未曾消散，萨利一家拼尽全力彼此守护、奋力求生，最终来到潘多拉星球临海的岛礁族寻求庇护。岛礁族首领特诺瓦里与罗娜尔为萨利一家提供了庇护所，这个部族的成员都是天生的潜水好手，也和海洋中的各种生物建立了密切联系。
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜2-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">2</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：91216</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/547610b144176fdec403dc559f67a2d5?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://siguzhuiju.com/index.php/vodplay/3412-3-1.html" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                反贪风暴5：最终章 G風暴
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2021年12月31日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>4.6分</span> <em>豆瓣评分</em></li>
+                                            <li><span>犯罪</span> <em>类型</em></li>
+                                            <li><span>中国</span> <em>地区</em></li>
+                                        </ul>
+
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                ICAC首席调查主任陆志廉（古天乐 饰）与总调查主任程德明（郑嘉颖 饰）共同调查走私贪污案，意外发现另一起涉及人口贩卖的海关贪腐大案。此案与恐袭集团首脑King及其幕后指使人肖卓亚（谢天华 饰）有关，并牵涉多名香港海关高层领导，且似乎与受邀到香港、被JFIU廖保强（张智霖 饰）秘密保护的亚洲首席大法官庞爱玛（宣萱 饰）也有联系。暗流涌动、扑朔迷离，真相究竟何时浮现……
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜3-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">3</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：89390</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/c4e2106272886efcd4b9e3de7cfd7770?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://www.aliyundrive.com/s/hK6f1z1ZqNT" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                万里归途
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2022年9月30日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>7.4分</span> <em>豆瓣评分</em></li>
+                                            <li><span>战争</span> <em>类型</em></li>
+                                            <li><span>中国</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                电影根据真实事件改编。
+                                            </div>
+                                            <div class="g-comfooter">
+                                                努米亚共和国爆发战乱，前驻地外交官宗大伟（张译 饰）与外交部新人成朗（王俊凯 饰）受命前往协助撤侨。任务顺利结束，却得知还有一批被困同胞，正在白婳（殷桃 饰）的带领下，前往边境撤离点。情急之下，两人放弃了回家机会，逆行进入战区。赤手空拳的外交官，穿越战火和荒漠，面对反叛军的枪口，如何带领同胞走出一条回家之路……
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜4-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">4</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：87317</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/ba5321990b08185d1f2d4436073fc6c8?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://www.nen9.com/play/bXZfMTgtbm1f5Lit5a2X.html" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                泰坦尼克号
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">1998年04月03日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>9.5分</span> <em>豆瓣评分</em></li>
+                                            <li><span>爱情</span> <em>类型</em></li>
+                                            <li><span>美墨澳加</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                1912年4月10日，号称 “世界工业史上的奇迹”的豪华客轮泰坦尼克号开始了自己的处女航，从英国的南安普顿出发驶往美国纽约。富家少女罗丝（凯特•温丝莱特）与母亲及未婚夫卡尔坐上了头等舱；另一边，放荡不羁的少年画家杰克（莱昂纳多·迪卡普里奥）也在码头的一场赌博中赢得了下等舱的船票。
+                                            </div>
+                                            <div class="g-comfooter">
+                                                罗丝厌倦了上流社会虚伪的生活，不愿嫁给卡尔，打算投海自尽，被杰克救起。很快，美丽活泼的罗丝与英俊开朗的杰克相爱，杰克带罗丝参加下等舱的舞会、为她画像，二人的感情逐渐升温。
+                                            </div>
+                                            <div class="g-comfooter">
+                                                1912年4月14日，星期天晚上，一个风平浪静的夜晚。泰坦尼克号撞上了冰山，“永不沉没的”泰坦尼克号面临沉船的命运，罗丝和杰克刚萌芽的爱情也将经历生死的考验。
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜5-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">5</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：62708</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/fef466a6b6201fa5e5f1e9bd2619947b?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://siguzhuiju.com/index.php/vodplay/1470-1-1.html" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                疯狂72小时
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2014年06月06日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>4.7分</span> <em>豆瓣评分</em></li>
+                                            <li><span>喜剧</span> <em>类型</em></li>
+                                            <li><span>中国</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                七年前的婚礼上，许三娜（阎妮 饰）的父亲，伍波（耿乐 饰）的准岳父实在看不上将来的女婿竟是一个一文不名的穷光蛋，大婚当天伍波落荒而逃，婚礼现场留下了目瞪口呆的亲朋和傻掉的新娘。逃婚后伍波立下宏愿，一定在短时期内创业成功，挣大钱住豪宅，让羞辱过自己的人看看，怎奈商场如战场，几年打拼下来，钱没赚到反而负债累累，走到了濒临自杀的地步。回过头来看三娜，当初伍波逃婚令她蒙羞，她发誓一定要嫁入豪门，但七年过后，高不成低不就的三娜仍待在闺中，成了年逾三旬的剩女。七年后，当初的冤家竟莫名做了邻居......
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜6-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">6</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：57761</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/52aa42100775197904433ef8b6a505f6?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://www.hanritai.com/5500/#" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                寄生虫
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2019年05月21日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>8.8分</span> <em>豆瓣评分</em></li>
+                                            <li><span>剧情</span> <em>类型</em></li>
+                                            <li><span>韩国</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                基宇（崔宇植 饰）出生在一个贫穷的家庭之中，和妹妹基婷（朴素丹 饰）以及父母在狭窄的地下室里过着相依为命的日子。一天，基宇的同学上门拜访，他告诉基宇，自己在一个有钱人家里给他们的女儿做家教，太太是一个头脑简单出手又阔绰的女人，因为自己要出国留学，所以将家教的职位暂时转交给基宇。
+                                            </div>
+                                            <div class="g-comfooter">
+                                                就这样，基宇来到了朴社长（李善均 饰）家中，并且见到了他的太太（赵汝贞 饰），没过多久，基宇的妹妹和父母也如同寄生虫一般的进入了朴社长家里工作。然而，他们的野心并没有止步于此，基宇更是和大小姐坠入了爱河。随着时间的推移，朴社长家里隐藏的秘密渐渐浮出了水面。
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜7-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">7</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：54663</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/f17a86c2ef55343956cdfacefff7b380?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://pan.quark.cn/s/513a9388c4de#/list/share" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                独行月球
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2022年07月29日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>6.6分</span> <em>豆瓣评分</em></li>
+                                            <li><span>喜剧科幻</span> <em>类型</em></li>
+                                            <li><span>中国</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                人类为抵御小行星的撞击，拯救地球，在月球部署了月盾计划。陨石提前来袭，全员紧急撤离时，维修工独孤月（沈腾 饰）因为意外，错过了领队马蓝星（马丽 饰）的撤离通知，一个人落在了月球。不料月盾计划失败，独孤月成为了“宇宙最后的人类”，开始了他在月球上破罐子破摔的生活……
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜8-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">8</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：54560</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/d2050afb7249836492c0bc1bf6492d82?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://siguzhuiju.com/index.php/vodplay/172396-1-1.html" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                绝命航班
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2014年03月21日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>3.5分</span> <em>豆瓣评分</em></li>
+                                            <li><span>灾难</span> <em>类型</em></li>
+                                            <li><span>中国</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                夜幕降临，从太平洋中心好运岛飞往新加坡的大洋航空615次航班正准备起飞。由于近几年乘客锐减，该航班即将取消，此次也是这架飞机最后一次飞行。方木（辜承 饰）、沈吟（伊娜 饰）、刘夏（李晨浩 饰）等寥寥九位乘客走入机舱。机长查尔斯（艾德·维斯特维克 ED Westwick 饰）颇有些伤感和落寞地向乘客们通报了最后一次飞行的消息。孤独而漫长的旅程，乘客们相继睡去，花花公子刘夏不忘勾搭空姐杰西卡（江琳琳 饰）寻求艳遇。
+                                            </div>
+                                            <div class="g-comfooter">
+                                                夜色越来越浓，超级月亮升上高空，杰西卡竟然衣衫凌乱惨死机舱。死亡的恐怖氛围迅速蔓延，所有人都为各自的命运担忧，而神秘凶手却未打算就此罢休……
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜9-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">9</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：53986</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/37fdcb0f000e3200e62aef33bef21955?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://v.youku.com/v_show/id_XMzcyODc4MTg2NA==.html" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                我的朋友
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2022年10月31日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>无</span> <em>豆瓣评分</em></li>
+                                            <li><span>短片</span> <em>类型</em></li>
+                                            <li><span>中国</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                《我的朋友》邀请FIRST FRAME年度推荐人周迅、王一博共同演绎，由青年导演张大磊执导，描摹寻常处的体面之美，捕捉人情的隽永时刻，复现电影所带来的的生活向往。《我的朋友》亦如穿越时空的影票，诚邀观众走进FIRST FRAME的影像世界，以电影传统传承启发，鼓励青年影人的创造精神，以经典重现过去，以时光雕刻未来。
+                                                当耳畔响起女主角小周温柔平实的喃喃絮语，我们与当下暂别，一起回到90年代的日常。小周以检票员的身份打开观众前往影像世界的入口，电影院如同永驻的庇护所，银幕悄然召唤人群，人与人因电影而久别重逢，相互安慰，荡漾情谊的波澜。《我的朋友》因复归影院精神而熠熠生辉，银幕之光照应万「帧」流转，而独一无二的电影样本与人情聚离，蕴藉隽永。交错光影映照出小周与一博的面容，成为朋友的契机悄然而至，而电影亦是每一个人的朋友。
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--电影排行榜10-->
+                                <li class="good-single-item">
+                                    <i class="oPublicTopIcon">10</i>
+                                    <div class="inProduc-top">
+                                        <div class="inProduc-l-ImgBox g-shop-top">
+                                            <div class="ac-iconbox"></div>
+                                            <em>热搜指数：50151</em>
+                                            <img src="https://fyb-1.cdn.bcebos.com/fyb-1/20230110/32252ecc15981695b4a13c4cf12a0a84?x-bce-process=image/resize,m_fill,w_160,h_214" lazy="loaded">
+                                            <div class="inProduc-l-ImgBottom animatedFade animatedfadeInOpacity">
+                                                <div class="comflexCenter">
+                                                    <span class="c-shoplist-top-btn"> <a href="https://www.hanjubo.com/player/2642_1_1.html" style="color:white" target="_blank">在线观看 </a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inProduc-l-conter info-box">
+                                        <div class="inProduc-l-m">
+                                            <h5 class="comHidden">
+                                                魔女2
+                                            </h5>
+                                        </div>
+                                        <div class="goods-label">
+                                            <div class="label-box">
+                                                <div class="label-box-wrap" style="top: -50px; transition-duration: 0.5s;">
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle">
+                                                        <div class="label-item textoh">？</div>
+                                                    </div>
+                                                    <div class="flex-label flex-label-center label-middle item-active"><div class="label-item textoh">2022年06月15日上映</div></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="price-couqon-tkrates clearfix">
+                                            <li><span>6.1分</span> <em>豆瓣评分</em></li>
+                                            <li><span>悬疑</span> <em>类型</em></li>
+                                            <li><span>韩国</span> <em>地区</em></li>
+                                        </ul>
+                                    </div> <div class="inProduc-l-de">
+                                        <div class="g-icon-box inProduc-l-icon" style="display: flex;">
+                                            <em class="el-tooltip g-icon-tm" aria-describedby="el-tooltip-2608" tabindex="0"></em>
+                                        </div>
+                                        <div class="g-shoplist-footer c-feed-active">
+                                            <div class="g-itemprice comflexAlignCenter">剧情简介：</div>
+                                            <div class="g-comfooter">
+                                                影片讲述了一名少女在某个巨型秘密实验室里醒来，她逃出实验室，偶然遇到努力从犯罪组织那里守护自己的家的庆熙。闯入庆熙家里的犯罪组织和少女冲突后，少女以压倒性的实力打败了他们。这期间，秘密实验室一直在追踪少女，这名神秘的少女到底是谁？
+                                            </div>
+                                            <div class="bottom-report bottom-card-repor comflexCenter">
+                                                <i class="iconfont hdk-jubao_report"></i> <span>侵权联系删</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--标记结束-->
+                            </ul>
+                        </div>
+                        <div class="more"><p>你看到了我的底线😳</p> <i class="more-icon iconfont hdk-xiangyou"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!--好单排行榜结束-->
+            
+    </div>
+        </section>
+    </div>
+<!--主体部分-->            
+<!-- 底部开始 -->
+<footer class="footer">
+    <link rel="stylesheet" href="Config/index/com-footer.css">
+    <div class="g-footer-wrap">
+        <div class="footer-content">
+            <div class="footer-copy">
+                CopyRight©2023  青云依旧&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a rel="nofollow" target="_blank" href="https://beian.miit.gov.cn/" class="footer-yicpb">青云阁</a>&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;青云搜索&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;<a target="cyxyv" href="#" class="footer-cyxyv"><img src="Img/logo.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--统计开始-->
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?17dd59811e65f079602361ac81f5c623";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!--统计结束-->
+
+
+</footer>
+<!-- 底部结束 -->
+</body></html>
