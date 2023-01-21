@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>青云依旧祝您新年快乐</title>
+        <link rel="stylesheet" href="fireworks/style.css">
+    </head>
+    <body onselectstart="return false">
+        <!-- 消息提示 -->
+        <div class="message">
+            <p>请单击屏幕开启背景音乐</p>
+        </div>
+        <!-- 流星与星火 -->
+        <div id="backgroundRendering" style="z-index: 0;"></div>
+        <!--烟花-->
+        <canvas id="fireworks" style="z-index: 9999;">
+            您的浏览器不支持canvas标签。
+        </canvas>
+        <!-- 背景音乐 -->
+        <audio id="bgm" src="fireworks/bgm.mp3" loop autoplay>
+            您的浏览器不支持 audio 标签。
+        </audio>
+        <!-- 自定义内容弹窗 -->
+        <div style="display: none">
+            <div class="shape">🧨2023新年快乐🧨</div>
+            <div class="shape">🎆”兔“飞猛进🎆</div>
+            <div class="shape">🎇前”兔“似锦🎇</div>
+            <div class="shape">🏮扬眉”兔“气🏮</div>
+            <div class="shape">🧨大展宏”兔“🧨</div>
+            <div class="shape">🎆前”兔“无量🎆</div>
+            <div class="shape">🏮友谊长存🏮</div>
+            <div class="shape">🏮心想事成🏮</div>
+            <div class="shape">🏮万事如意🏮</div>
+        </div>
+        <script src="fireworks/main.js"></script>
+    </body>
+</html>
