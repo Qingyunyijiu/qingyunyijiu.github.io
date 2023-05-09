@@ -7,30 +7,32 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo">
+        <!-- Navigation bar -->
+        <img src="logo.png" alt="Logo" width="100">
         <nav>
-          <a href="#">青云搜索</a>
-          <a href="#">青云阁</a>
-          <a href="#">青云优选</a>
-          <a href="#">关于本站</a>
+           <a href="#">青云搜索</a>
+           <a href="#">青云阁</a>
+           <a href="#">青云优选</a>
+           <a href="#">关于本站</a>
         </nav>
-        <div class="weather-time">
-          <p>12:00 PM</p>
-          <p>Sunny</p>
-        </div>
-      </header>
+        <!-- Display weather and time information here -->
+        <div id="city-name"></div>
+        <div id="weather"></div>
+     </header>   
    <div class="main">
       <aside>
+         <!-- Navigation sidebar -->
          <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Button 2</a></li>
-            <li><a href="#">Button 3</a></li>
-            <li><a href="#">Button 4</a></li>
-            <li><a href="#">Button 5</a></li>
+            <li class="active-button"><a href="#" onclick="activateButton(this, 'https://qingyunyijiu.github.io/search.html')">首页</a></li>
+            <li><a href="#" onclick="activateButton(this, 'https://huggingface.co/chat')">Hugging chat</a></li>
+            <li><a href="#" onclick="activateButton(this, 'https://bing.com')">bing chat</a></li>
+            <li><a href="#" onclick="activateButton(this, 'https://openai.com')">Button 4</a></li>
+            <li><a href="#" onclick="activateButton(this, 'https://baidu.com')">Button 5</a></li>
          </ul>
       </aside>
-      <iframe src="https://qingyunyijiu.github.io/search.html"></iframe>
+      <iframe id="content-frame" src="https://qingyunyijiu.github.io/search.html"></iframe>
    </div>
+   
    <footer>
       <div class="footer-text">
          &copy; 2023 青云依旧
@@ -39,5 +41,21 @@
          Total Visitors: 10,000
       </div>
    </footer>
+
+   <!-- Include weather.js file -->
+   <script src="weather.js"></script>
+   <script>
+      function activateButton(button, url) {
+         // Remove active class from all buttons
+         var buttons = document.getElementsByTagName("li");
+         for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove("active-button");
+         }
+         // Add active class to clicked button
+         button.parentNode.classList.add("active-button");
+         // Change iframe source
+         document.getElementById("content-frame").src = url;
+      }
+   </script>
 </body>
 </html>
