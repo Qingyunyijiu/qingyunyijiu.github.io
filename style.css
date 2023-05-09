@@ -1,129 +1,107 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
- }
- 
- header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f0f0f0;
-  }
-  
-  nav {
-    display: flex;
-  }
-  
-  nav a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #333;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  nav a:hover,
-  nav a.active {
-    background-color: #333;
-    color: #fff;
-  }
- 
- .main {
-    display: flex;
-    padding: 20px;
- }
- 
- aside {
-    background-color: #f2f2f2;
-    width: 220px;
-    margin-right: 20px;
-    height: calc(100vh - 110px);
-    position: sticky;
-    top: 60px;
-    border-radius: 5px;
- }
- 
- aside ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
- }
- 
- aside li {
-    padding: 10px 20px;
-    position: relative;
- }
- 
- aside li.active {
-    background-color: #fff;
-    color: #333;
- }
- 
- aside li.active::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background-color: #333;
- }
- 
- aside li a {
-    color: #333;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in;
- }
- 
- aside li a:hover {
-    color: #f2f2f2;
- }
- 
- iframe {
-    flex: 1;
-    border: none;
-    margin-top: 20px;
-    height: calc(100vh - 130px);
-    border-radius: 5px;
- }
- 
- footer {
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
- 
- .footer-text {
-    font-size: 14px;
- }
- 
- .footer-count {
-    font-size: 16px;
-    font-weight: bold;
- }
-
-/* 
-To create a responsive design, we need to add media queries to adjust the layout on different screen sizes. 
-*/
-
-/* Small Screens */
-@media only screen and (max-width: 600px) {
-  /* Adjustments to layout for smaller screen sizes */
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Medium Screens */
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-  /* Adjustments to layout for medium sized screens */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
 }
 
-/* Large Screens */
-@media only screen and (min-width: 993px) {
-  /* Adjustments to layout for larger screens */
-} 
+nav {
+  display: flex;
+}
 
-/* End of responsive design code */
+nav a {
+  display: block;
+  padding: 0.25rem 1rem;
+  line-height: 1; /* This line has been added */
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: red;
+  color: white;
+}
+
+.main {
+  display: flex;
+  padding: 1px;
+}
+
+aside {
+  background-color: #f2f2f2;
+  width: 150px;
+  margin-right: 10px;
+  height: calc(100vh - 110px);
+  position: sticky;
+  top: 60px;
+  border-radius: 5px;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside li {
+  padding: 10px 20px;
+  position: relative;
+}
+
+aside li.active {
+  background-color: #fff;
+  color: #333;
+}
+
+aside li.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #333;
+}
+
+aside li a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+aside li a:hover {
+  color: #f2f2f2;
+}
+
+iframe {
+  flex: 1;
+  border: none;
+  margin-top: 10px;
+  height: calc(100vh - 130px);
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.footer-count {
+  font-size: 10px;
+  font-weight: bold;
+}
