@@ -1,3 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.clearfix:before,.clearfix:after{
+  content: '';
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+/* body{
+  background-color: #f3f5f7;
+} */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -104,4 +126,21 @@ footer {
 .footer-count {
   font-size: 10px;
   font-weight: bold;
+}
+
+
+.xgxq:hover .items{
+  display: block;
+}
+.items{
+  /* top: 10px; */
+  position: absolute;
+  /* overflow: scroll;  */
+  display: none;
+  background-color: #cacaca;
+}
+.items .item{
+  margin: 10px;
+  font-size: 16px;
+  line-height: 32px;
 }
